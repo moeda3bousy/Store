@@ -1,0 +1,138 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.navbar{
+    background-color: black;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.icon{
+    background-color: orangered;
+    border: 3px solid white;
+    padding: 15px 30px;
+    width:fit-content;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .5s all;
+    position: relative;
+    z-index: 9999999;
+}
+.icon:hover{
+    background-color: orange;
+    font-weight: bold;
+    transform: scale(1.1);
+}
+
+.dropdown{
+    background-color: black;
+    color: orangered;
+    width: 120px;
+    position:absolute;
+    padding: 10px;
+    top: 120%;
+    left: 0;
+    z-index: 99999999999999999999;
+}
+
+.menu{
+border-bottom:orangered solid 2px;
+margin-bottom: 5px;
+
+}
+
+.title{
+    color:orangered;
+    font-weight: bold;
+}
+
+.cards{
+    display: flex;
+    align-items: center;
+    flex-wrap:wrap;
+}
+
+.mycard{
+    position:relative;
+}
+
+.view{
+line-height: 45px;
+color: white;
+position: absolute;
+top: 0%;
+left:0%;
+right:0%;
+bottom:0%;
+background-color: orangered;
+padding: 30px;
+}
+.inside{
+    position: relative;
+}
+
+.cancel{
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    color: orangered;
+    z-index: 99999999;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    font-size: 50px;
+    background-color: black;
+    padding: 10px;
+    border-radius: 3px;
+}
+.card{
+    background-color: orangered;
+    border: 3px solid white;
+    padding: 20px;
+    color: white;
+    border-radius: 5px;
+    width: 25%;
+    margin-top: 5px;
+    line-height: 35px;
+}
+.button{
+    background: white;
+    color:  black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 0px;
+    margin-right: 5px;
+    cursor: pointer;
+    transition: .5s all;
+}
+.button:hover{
+    background-color:wheat;
+   font-weight: bold;
+}
+img{
+    border-radius: 5px;
+    transition: 1s all;
+}
+img:not(.i):hover{
+transform: scale(1.1);
+}
+
+
+
+@media screen and ( max-width: 550px ){
+    .card{
+        width: 100%;
+    }
+}
+
+@media screen and ( min-width: 551px ) and ( max-width:951px ) {
+    .card{
+        width: 50%;
+    } 
+    
+}
+
